@@ -76,14 +76,11 @@ public class aprilTagController : MonoBehaviour
     void Update()
     {
         float hor_dist_to_tag__m = horz_dist_to_tag();
-        // mqttAprilTagsVisable msg = initTags();
         if (hor_dist_to_tag__m < visableRadius)
         {
             fill_message();
-            Debug.Log(msg.id.ToString());
             string msg_str = JsonUtility.ToJson(msg);
-            mqttObj.publish_msg("test/test2", msg_str);
-            Debug.Log(msg_str);
+            mqttObj.publish_msg("vrc/apriltags/visible_tags", msg_str);
         }
     }
 }
