@@ -4,9 +4,13 @@ This Repository hosts the Unity project for the VRC 2022 simulation.
 
 ## Architecture
 
-This simulation is currently designed to run all on a local development computer. A hwigh level architecture diagram is shown below. 
+This simulation is currently designed to run all on a local development computer. A high level architecture diagram is shown below. 
 
 ![client diagram](docs/imgs/local_sim.PNG)
+
+A more detailed diagram of how the VRC flight software interacts with the simulation is shown below
+
+![vrc sitl software diagram](docs/imgs/VRC_SITL_detailed_diagram.png)
 
 We are also working to make this simulation web based. The goal of this architecture will be to allow all of the students to participate in the software development of the drone with minimal installation required. The client side requirements will be as follow
 
